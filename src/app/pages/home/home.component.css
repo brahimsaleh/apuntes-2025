@@ -1,0 +1,35 @@
+.home-wrapper {
+    display: flex;
+    flex-direction: row; /* Organiza los hijos en columna */
+    height: 100vh; /* Ocupa toda la pantalla */
+    overflow: hidden; /* Evita desbordamientos */
+}
+
+.top-menu {
+    height: 60px; /* Ajusta según el tamaño del menú */
+    background-color: #f4f4f4; /* Color de fondo opcional */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra opcional */
+    z-index: 10; /* Asegura que esté sobre el contenido */
+}
+
+.content-wrapper {
+    display: flex;
+    flex: 1; /* Ocupa el resto del espacio disponible */
+    overflow: hidden; /* Evita solapamientos */
+}
+
+app-sidemenu {
+    width: 250px;
+    flex-shrink: 0;
+    background-color: #f4f4f4;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    overflow: auto; /* Permite desplazamiento si el contenido es muy grande */
+}

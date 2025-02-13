@@ -1,0 +1,45 @@
+.ang-wrapper {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-top: auto;
+}
+
+.ang-title {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #dc3545;
+    margin-bottom: 15px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+.item-list {
+    background: white;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.item-list:hover {
+    transform: scale(1.02);
+}
+
+.title {
+    font-weight: bold;
+    color: #343a40;
+    margin: 0;
+}
+
+.description {
+    color: #6c757d;
+    margin: 5px 0 0 0;
+}

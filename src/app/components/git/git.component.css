@@ -1,0 +1,49 @@
+h3 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #007bff;
+    margin-bottom: 15px;
+}
+
+.git-wrapper{
+margin-top: 500px;
+
+
+
+
+}
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.list-element {
+    background: #f8f9fa;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+.list-element:hover {
+    background: #e9ecef;
+}
+
+.title-description {
+    font-weight: bold;
+    color: #343a40;
+    margin: 0;
+}
+
+p {
+    color: #6c757d;
+    margin: 5px 0 0 0;
+}

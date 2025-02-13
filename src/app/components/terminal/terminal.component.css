@@ -1,0 +1,46 @@
+.component-container {
+    max-width: 700px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.git-wrapper{
+    margin-top: 500px;
+    
+    
+}
+
+
+
+h2 {
+    text-align: left;
+    font-size: 1.6rem;
+    color: #007bff;
+    margin-bottom: 10px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background: white;
+    padding: 12px;
+    margin-bottom: 8px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease-in-out;
+}
+
+li:hover {
+    background: #e9ecef;
+}
+
+strong {
+    color: #343a40;
+    font-weight: bold;
+}
