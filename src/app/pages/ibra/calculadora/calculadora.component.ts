@@ -10,20 +10,24 @@ import { FormsModule } from '@angular/forms';
 })
 export class CalculadoraComponent {
   result: number = 0;
-  num1: number|undefined;
-  num2: number|undefined;
+  num1: number | undefined;
+  num2: number | undefined;
 
 
-  calculadora(number1: number |undefined, number2: number |undefined, operation: string) {
-    if(!(number1&&number2)) return;
+  calculadora(number1: number | undefined, number2: number | undefined, operation: string) {
+    if (!(number1 && number2)) return;
     if (operation === 'suma') {
       this.result = number1 + number2;
+      return console.log("se ha hecho una suma")
     } else if (operation === 'resta') {
       this.result = number1 - number2;
+      return console.log("se ha hecho una resta")
     } else if (operation === 'mult') {
       this.result = number1 * number2;
+      return console.log("se ha hecho una  multlipicacion")
     } else if (operation === 'div') {
       this.result = number1 / number2;
+      return console.log("se ha hecho una division")
     }
   }
 
