@@ -13,11 +13,10 @@ export class CalculadoraComponent {
   num1: number|undefined;
   num2: number|undefined;
 
-  calculadora(number1:number|undefined, number2:number|undefined, operation:string) {
-    
-    if(!(number1&&number2)) return;
 
-    if(operation === 'suma') {
+  calculadora(number1: number |undefined, number2: number |undefined, operation: string) {
+    if(!(number1&&number2)) return;
+    if (operation === 'suma') {
       this.result = number1 + number2;
     } else if (operation === 'resta') {
       this.result = number1 - number2;
@@ -27,8 +26,5 @@ export class CalculadoraComponent {
       this.result = number1 / number2;
     }
   }
-
-
-
 
 }
