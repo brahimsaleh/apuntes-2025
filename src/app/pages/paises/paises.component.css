@@ -1,0 +1,130 @@
+/* Estilos generales */
+.paises-app {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f2f5;
+    min-height: 100vh;
+    padding: 40px;
+  }
+  
+  .main-card {
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  .app-title {
+    color: #2d3436;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+  }
+  
+  /* Cards comunes */
+  .search-card,
+  .result-card,
+  .error-card {
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 25px;
+    margin-bottom: 30px;
+    border: 1px solid #e0e0e0;
+  }
+  
+  .card-title {
+    color: #2d3436;
+    font-size: 1.8rem;
+    margin-top: 0;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #f0f0f0;
+  }
+  
+  /* Card de búsqueda */
+  .search-box {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .search-input {
+    flex: 1;
+    padding: 12px 15px;
+    border: 2px solid #dfe6e9;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s;
+  }
+  
+  .search-input:focus {
+    border-color: #74b9ff;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(116, 185, 255, 0.3);
+  }
+  
+  .search-btn {
+    background-color: #0984e3;
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+  
+  .search-btn:hover {
+    background-color: #0767b3;
+    transform: translateY(-2px);
+  }
+  
+  /* Card de resultados */
+  .country-display {
+    display: flex;
+    gap: 30px;
+  }
+  
+  .country-data {
+    flex: 1;
+  }
+  
+  .data-row {
+    margin-bottom: 15px;
+  }
+  
+  .data-label {
+    font-weight: bold;
+    color: #636e72;
+    display: inline-block;
+    width: 100px;
+  }
+  
+  .data-value {
+    color: #2d3436;
+    font-size: 1.1rem;
+  }
+  
+  .flag-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .country-flag {
+    max-width: 200px;
+    border: 1px solid #dfe6e9;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card de error */
+  .error-card {
+    background-color: #ffeaa7;
+    border-color: #fdcb6e;
+  }
+  
+  .error-card .card-title {
+    color: #d63031;
+    border-bottom-color: #fdcb6e;
+  }

@@ -1,4 +1,4 @@
-<div>
+<!-- <div>
     <div>
         <h1>Paises page</h1>
     </div>
@@ -7,16 +7,78 @@
             <h3>Buscar un país</h3>
         </div>
         <div>
-            <input [(ngModel)]= "paisBuscar"type="text" placeholder="Introduzca un pais">
+            <input [(ngModel)]= "paisBuscar"type="text" placeholder="">
         </div>
         <div>
             <button (click)="getPaisesWithFetch(paisBuscar)"> Buscar pais </button>
         </div>
 
-        Informacion del pais 
-        <H2> pais:{{ paisRecibido.name.common}}</H2>
-        <h3>Capital</h3>
+      <div *ngIf="paisRecibido">
+       <h2> Informacion del pais</h2>
+        <h3> pais:{{ paisRecibido.name.common}}</h3>
+        <h3>Capital :{{ paisRecibido.capital[0]}}</h3> 
+        <h3>Continente :{{ paisRecibido.continents[0]}}</h3> 
+
         <img [src]="paisRecibido.flags.png" alt="bandera">
         
+      </div>
+      <div *ngIf="!paisRecibido && paisBuscar">
+        <h3>
+         pais no encontrado
+        </h3>
+        
+      </div>
     </div>
+</div> -->
+
+<div class="paises-app">
+  <div class="main-card">
+    <h1 class="app-title">Explorador de Países</h1>
+    
+    <div class="search-card">
+      <h2 class="card-title">🔍 Buscar País</h2>
+      <div class="search-box">
+        <input [(ngModel)]="paisBuscar" 
+               type="text" 
+               class="search-input"
+               placeholder="Ingresa un país...">
+        <button (click)="getPaisesWithFetch(paisBuscar)" 
+                class="search-btn">
+          Buscar
+        </button>
+      </div>
+    </div>
+
+    <div *ngIf="paisRecibido && !error" class="result-card">
+      <h2 class="card-title">📌 Resultados</h2>
+      
+      <div class="country-display">
+        <div class="country-data">
+          <div class="data-row">
+            <span class="data-label">País:</span>
+            <span class="data-value">{{ paisRecibido.name.common }}</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Capital:</span>
+            <span class="data-value">{{ paisRecibido.capital[0] }}</span>
+          </div>
+          <div class="data-row">
+            <span class="data-label">Continente:</span>
+            <span class="data-value">{{ paisRecibido.continents[0] }}</span>
+          </div>
+        </div>
+        
+        <div class="flag-container">
+          <img [src]="paisRecibido.flags.png" 
+               alt="Bandera" 
+               class="country-flag">
+        </div>
+      </div>
+    </div>
+
+    <div *ngIf="!paisRecibido && error" class="error-card">
+      <h2 class="card-title">⚠️ País no encontrado</h2>
+      <p>Intenta con otro nombre</p>
+    </div>
+  </div>
 </div>
